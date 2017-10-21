@@ -6,13 +6,13 @@
 
 
     <EditText
-        android:id="@+id/campo_conta"
+        android:id="@+id/et_campo_conta"
         android:layout_width="match_parent"
         android:layout_height="wrap_content" />
 
 
     <EditText
-        android:id="@+id/campo_valor"
+        android:id="@+id/et_campo_valor"
         android:layout_width="match_parent"
         android:layout_height="wrap_content" />
 

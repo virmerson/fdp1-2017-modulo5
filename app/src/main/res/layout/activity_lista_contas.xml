@@ -1,14 +1,34 @@
-<?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context="com.htcursos.financasapp.ListaContasActivity">
+    android:layout_height="match_parent" android:orientation="vertical">
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="LISTA DE CONTAS" />
 
 
 
     <TextView
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content" android:text="LISTA DE CONTAS" />
-</android.support.constraint.ConstraintLayout>
+        android:layout_height="wrap_content"
+        android:text="CONTA:" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" android:id="@+id/tv_texto_conta" />
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Valor:" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" android:id="@+id/tv_valor_conta" />
+
+
+
+</LinearLayout>
