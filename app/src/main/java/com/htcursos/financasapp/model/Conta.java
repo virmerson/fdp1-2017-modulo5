@@ -29,4 +29,9 @@ public class Conta implements Serializable {
     public void setValor(Double valor) {
         this.valor = valor;
     }
+
+    @Override
+    public String toString() {
+        return getDescricao() + "|"+ getValor();
+    }
 }

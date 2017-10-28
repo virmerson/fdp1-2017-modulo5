@@ -1,5 +1,6 @@
 package com.htcursos.financasapp.activity;
 
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.widget.TextView;
@@ -46,5 +47,9 @@ public class DetalhesContasActivity extends AppCompatActivity {
         ContaService contaService = new ContaService();
         contaService.cadastrar(conta );
         Toast.makeText(this, "Cadastrado com sucesso!", Toast.LENGTH_SHORT).show();
+
+        Intent irParaListaContas =  new Intent(this, ListaContaActivity.class);
+        startActivity(irParaListaContas);
+
     }
 }
