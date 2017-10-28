@@ -5,6 +5,7 @@ import android.os.Bundle;
 import android.widget.TextView;
 
 import com.htcursos.financasapp.R;
+import com.htcursos.financasapp.model.Conta;
 
 import butterknife.BindView;
 import butterknife.ButterKnife;
@@ -26,12 +27,13 @@ public class DetalhesContasActivity extends AppCompatActivity {
 
 
         Bundle bundle = getIntent().getExtras();
-        String conta = bundle.getString("conta");
-        String valor = bundle.getString("valor");
+
+        Conta conta =  (Conta) bundle.getSerializable("conta");
 
 
-        tvConta.setText(conta);
-        tvValor.setText(valor);
+
+        tvConta.setText(conta.getDescricao());
+        tvValor.setText(conta.getValor().toString());
 
 
     }
