@@ -31,4 +31,10 @@
 
 
 
+    <Button
+        android:id="@+id/btn_confirmar"
+        android:text="@string/confirmar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
 </LinearLayout>
