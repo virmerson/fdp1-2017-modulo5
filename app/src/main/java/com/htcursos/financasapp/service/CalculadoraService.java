@@ -1,16 +1,15 @@
-package com.htcursos.financasapp;
+package com.htcursos.financasapp.service;
 
 /**
  * Created by Virmerson on 14/10/17.
  */
 
-public class Calculadora {
+public class CalculadoraService {
 
 
 
     public Double somar(Double n1, Double n2){
         return n1 + n2;
-
     }
 
 

@@ -1,13 +1,15 @@
-package com.htcursos.financasapp;
+package com.htcursos.financasapp.activity;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.widget.TextView;
 
+import com.htcursos.financasapp.R;
+
 import butterknife.BindView;
 import butterknife.ButterKnife;
 
-public class ListaContasActivity extends AppCompatActivity {
+public class DetalhesContasActivity extends AppCompatActivity {
 
     @BindView(R.id.tv_texto_conta)
     TextView tvConta;
@@ -18,7 +20,7 @@ public class ListaContasActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_lista_contas);
+        setContentView(R.layout.detalhes_conta);
 
         ButterKnife.bind(this);
 

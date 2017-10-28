@@ -1,12 +1,13 @@
-package com.htcursos.financasapp;
+package com.htcursos.financasapp.activity;
 
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
-import android.util.Log;
 import android.view.View;
-import android.widget.Button;
 import android.widget.EditText;
+
+import com.htcursos.financasapp.R;
+import com.htcursos.financasapp.model.Conta;
 
 import butterknife.BindView;
 import butterknife.ButterKnife;
@@ -33,13 +34,15 @@ public class CadastroContasActivity extends AppCompatActivity {
     @OnClick(R.id.btn_cadastrar)
     public void aoClicarCadastro(View view){
 
+        Conta conta  = new Conta();
+        conta.setDescricao(etConta.getText().toString());
+        conta.setValor(Double.parseDouble(etValor.getText().toString()));
 
         Bundle bundle = new Bundle();
-        bundle.putString("conta", etConta.getText().toString());
-        bundle.putString("valor", etValor.getText().toString());
+        bundle.putSerializable("conta", conta);
 
 
-        Intent irParaListaContas = new Intent(this, ListaContasActivity.class);
+        Intent irParaListaContas = new Intent(this, DetalhesContasActivity.class);
         irParaListaContas.putExtras(bundle);
         startActivity(irParaListaContas);
 

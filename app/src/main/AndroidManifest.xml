@@ -9,19 +9,19 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".MainActivity">
+        <activity android:name=".activity.MainActivity">
 
         </activity>
-        <activity android:name=".CaluladorActivity" />
-        <activity android:name=".CadastroEmpresaActivity" />
-        <activity android:name=".CadastroContasActivity" >
+        <activity android:name=".activity.CaluladorActivity" />
+        <activity android:name=".activity.CadastroEmpresaActivity" />
+        <activity android:name=".activity.CadastroContasActivity" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".ListaContasActivity"></activity>
+        <activity android:name=".activity.DetalhesContasActivity"></activity>
     </application>
 
 </manifest>

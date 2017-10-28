@@ -1,4 +1,4 @@
-package com.htcursos.financasapp;
+package com.htcursos.financasapp.activity;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -6,6 +6,9 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
+
+import com.htcursos.financasapp.service.CalculadoraService;
+import com.htcursos.financasapp.R;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -30,7 +33,7 @@ public class MainActivity extends AppCompatActivity {
 
                 String texto2 = campoNumero2.getText().toString();
 
-                Calculadora calc = new Calculadora();
+                CalculadoraService calc = new CalculadoraService();
 
                 Double soma= calc.somar(texto1, texto2);
 
@@ -56,7 +59,7 @@ public class MainActivity extends AppCompatActivity {
 
                 String texto2 = campoNumero2.getText().toString();
 
-                Calculadora calc = new Calculadora();
+                CalculadoraService calc = new CalculadoraService();
 
                 Double subtrair= calc.subtrair(texto1, texto2);
 
@@ -82,7 +85,7 @@ public class MainActivity extends AppCompatActivity {
 
                 String texto2 = campoNumero2.getText().toString();
 
-                Calculadora calc = new Calculadora();
+                CalculadoraService calc = new CalculadoraService();
 
                 Double multiplicacao= calc.multi(texto1, texto2);
 
@@ -108,7 +111,7 @@ public class MainActivity extends AppCompatActivity {
 
                 String texto2 = campoNumero2.getText().toString();
 
-                Calculadora calc = new Calculadora();
+                CalculadoraService calc = new CalculadoraService();
 
                 Double divisao= calc.divi(texto1, texto2);
 
